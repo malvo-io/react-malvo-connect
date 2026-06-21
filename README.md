@@ -1,8 +1,6 @@
 # react-malvo-connect
 
-React component for the **hosted Malvo Connect widget** (Open Finance Brasil) —
-a drop-in equivalent of
-[`react-pluggy-connect`](https://www.npmjs.com/package/react-pluggy-connect),
+React component for the **hosted Malvo Connect widget** (Open Finance Brasil),
 talking to your own Malvo API.
 
 It renders the hosted widget (`{baseUrl}/connect?token=...`) in an iframe modal
@@ -45,8 +43,8 @@ export function ConnectBankButton({ token }: { token: string }) {
 }
 ```
 
-Mounting opens the widget; unmounting closes it (same model as
-`react-pluggy-connect`). All options are accepted as props with identical names.
+Mounting opens the widget; unmounting closes it. All options are accepted as
+props.
 
 > **Webhooks are the source of truth.** `onSuccess` is best-effort UX — the user
 > may close the tab first. Persist connections from the `item/created` /
@@ -67,4 +65,4 @@ returns. No extra setup is required; just don't block popups for your origin.
 | `includeSandbox` | `boolean` | Show sandbox connectors. |
 | `updateItem` | `string` | Item id for an update flow. |
 | `connectorTypes` / `connectorIds` / `countries` / `language` / `selectedConnectorId` | — | Filtering / UX hints. |
-| `onSuccess` / `onError` / `onOpen` / `onClose` / `onEvent` | callbacks | Mirror `react-pluggy-connect`. |
+| `onSuccess` / `onError` / `onOpen` / `onClose` / `onEvent` | callbacks | Widget lifecycle callbacks. |

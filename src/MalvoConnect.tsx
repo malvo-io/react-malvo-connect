@@ -5,8 +5,7 @@ import { buildConnectUrl, widgetOrigin } from "./url";
 
 /**
  * Renders the hosted Malvo Connect widget in a centered iframe modal and
- * bridges its `postMessage` events to your callbacks — the drop-in equivalent
- * of `react-pluggy-connect`'s `PluggyConnect`.
+ * bridges its `postMessage` events to your callbacks.
  *
  * Mounting opens the widget; unmounting closes it. The integrator typically
  * keeps it mounted behind a boolean:

@@ -1,7 +1,7 @@
 {
   "name": "react-malvo-connect",
   "version": "0.1.0",
-  "description": "React component for the hosted Malvo Connect widget (Open Finance Brasil). Drop-in equivalent of react-pluggy-connect.",
+  "description": "React component for the hosted Malvo Connect widget (Open Finance Brasil) — link bank accounts via your own Malvo API.",
   "license": "MIT",
   "homepage": "https://github.com/malvo-io/react-malvo-connect",
   "repository": "github:malvo-io/react-malvo-connect",
@@ -41,7 +41,6 @@
     "malvo",
     "open-finance",
     "open-banking",
-    "pluggy",
     "react",
     "fintech",
     "brasil"

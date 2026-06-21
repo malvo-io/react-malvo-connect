@@ -6,4 +6,3 @@
   events to `onSuccess` / `onError` / `onClose` / `onEvent`.
 - Open Finance OAuth authorizes in a top-level popup (iframes can't frame banks)
   and resumes automatically.
-- API mirrors `react-pluggy-connect`.
