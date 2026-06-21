@@ -1,0 +1,49 @@
+{
+  "name": "react-malvo-connect",
+  "version": "0.1.0",
+  "description": "React component for the hosted Malvo Connect widget (Open Finance Brasil). Drop-in equivalent of react-pluggy-connect.",
+  "license": "MIT",
+  "homepage": "https://github.com/malvo-io/react-malvo-connect",
+  "repository": "github:malvo-io/react-malvo-connect",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "malvo",
+    "open-finance",
+    "open-banking",
+    "pluggy",
+    "react",
+    "fintech",
+    "brasil"
+  ]
+}
