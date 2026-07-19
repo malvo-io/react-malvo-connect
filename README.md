@@ -1,4 +1,4 @@
-# react-malvo-connect
+# @malvo/react-connect
 
 React component for the **hosted Malvo Connect widget** (Open Finance Brasil),
 talking to your own Malvo API.
@@ -9,7 +9,7 @@ and bridges its `postMessage` events to your callbacks.
 ## Install
 
 ```bash
-npm install react-malvo-connect
+npm install @malvo/react-connect
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ Never ship your `clientId`/`clientSecret` to the browser.
 
 ```tsx
 import { useState } from "react";
-import { MalvoConnect } from "react-malvo-connect";
+import { MalvoConnect } from "@malvo/react-connect";
 
 export function ConnectBankButton({ token }: { token: string }) {
   const [open, setOpen] = useState(false);
